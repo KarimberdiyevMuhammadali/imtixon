@@ -1,0 +1,99 @@
+header
+{
+    margin-bottom: 70px;
+    background-color: #bb2339;
+}
+nav
+{
+    background-color: #bb2339;
+}
+
+.navbar-toggler {
+    border: none !important;
+    background-color: transparent !important;
+  }
+.navbar-toggler:focus,
+.btn-close:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none !important;
+  outline: none !important;
+}
+
+@media(min-width:766px)
+{
+    .nav-link
+    {
+        color: #fff !important;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.64px;
+        position: relative;
+    }
+    .nav__link__with__border
+    {
+        display: inline-flex;
+        padding: 10px 40px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 40px;
+        font-weight: 600;
+        border-radius: 100px;
+        border: 1px solid #FFF;
+        transition: 0.4s ease;
+        margin-right: -20px;
+    }
+    .nav__link__with__border:hover
+    {
+        background-color: #fff ;
+        border: 1px solid #bb2339 ;
+
+    }
+    .nav__link__with__border:hover
+    .nav__link__login
+    {
+        color: #bb2339 !important;
+        font-weight: 700;
+    }
+}
+@media(min-width:1000px)
+{
+    .nav-item
+    {
+        margin-left: 40px;
+
+        .nav__link__b_eff:hover,
+        .nav__link__b_eff.active
+        {
+            color: white;
+        }
+
+        .nav__link__b_eff::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: white;
+            visibility: hidden;
+            -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+          }
+          .nav-link:hover::before,
+          .nav_link.active::before {
+            width: 100%;
+            visibility: visible;
+          }
+    }
+
+}
+.navbar-brand
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
